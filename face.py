@@ -6,16 +6,12 @@ known_face_encodings = []
 known_face_names = []
 
 # Load known faces and their names here
-known_person1_image = face_recognition.load_image_file(r"E:\ML projects\face recognition\prakhar singh.jpg")
 known_person3_image = face_recognition.load_image_file(r"E:\ML projects\face recognition\sharukh khan.jpg")
 
-known_person1_encoding = face_recognition.face_encodings(known_person1_image)[0]
 known_person3_encoding = face_recognition.face_encodings(known_person3_image)[0]
 
-known_face_encodings.append(known_person1_encoding)
 known_face_encodings.append(known_person3_encoding)
 
-known_face_names.append("Prakhar")
 known_face_names.append("Shahrukh Khan")
 
 # Initialize Webcam
